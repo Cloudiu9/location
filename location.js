@@ -6,9 +6,11 @@ function on_success(position){
 	document.getElementById("altitude").innerHTML = "Altitude = " + position.coords.altitude;
 	latlon = position.coords.latitude + "," + position.coords.longitude;
 
-	img_url = api_key;
+	const api_key = config.apiKey;
 
-	document.getElementById("map").innerHTML = "<img src = '"+img_url+"'>";
+	img_url = api_key;
+  
+	document.getElementById("map").innerHTML = "<img src='" + img_url + "'>";
 
 	function on_error(e)
 	{
