@@ -5,8 +5,7 @@ function get_geo_position() {
   
   function on_success(position) {
 	const latlon = position.coords.latitude + "," + position.coords.longitude;
-	const api_key = config.apiKey;
-	const img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&key=" + api_key;
+	const img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&key=AIzaSyABpALLdT_KbQYfNTJl-WqTvvNLLE1-smA";
   
 	document.getElementById("latitude").innerHTML = "Latitude = " + position.coords.latitude;
 	document.getElementById("longitude").innerHTML = "Longitude = " + position.coords.longitude;
