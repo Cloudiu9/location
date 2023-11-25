@@ -1,4 +1,3 @@
-// location.js
 function get_geo_position() {
 	var geo = navigator.geolocation;
 	geo.getCurrentPosition(on_success, on_error, geo_params);
@@ -19,7 +18,6 @@ function get_geo_position() {
   function on_error(e) {
 	console.error('Error getting geolocation:', e);
   
-	// Update an appropriate element with the error message
 	document.getElementById("error-message").innerHTML = "Error getting geolocation: " + e.message;
   }
   
